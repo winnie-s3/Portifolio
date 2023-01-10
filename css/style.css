@@ -1,0 +1,1852 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(96.54deg, rgba(97, 0, 255, 0.5) 8.65%, rgba(76, 0, 172, 0.237623) 50.45%, rgba(115, 0, 90, 0.237623) 84.62%), #07030F;
+    background-size: 100% 300%;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 13px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 15px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(88, 12, 138); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(63, 8, 100); 
+  }
+
+.index {
+    width: 100%;
+    height: 100%;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 20px;
+    padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.middle {
+    display: flex;
+    flex-direction: row;
+}
+
+.middle .left {
+    margin-top: 50px;
+}
+
+.middle .left h1 {
+    font-size: 100px;
+    font-family: 'Inria Sans', sans-serif;
+    color: white;
+    font-weight: 400;
+    line-height: 100px;
+}
+
+.middle .left .h1bottom {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.middle .left p {
+    font-size: 28px;
+    font-family: 'Inria Sans', sans-serif;
+    color: white;
+    width: 350px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.middle .left button {
+    font-size: 20px;
+    font-family: 'Inria Sans', sans-serif;
+    color: white;
+    background: transparent;
+    border: 2px solid #EF0056;
+    border-radius: 10px;
+    padding: 10px 35px;
+    cursor: pointer;
+}
+
+.middle .right .imageContainer img {
+    /* height: 540px; */
+    position: absolute;
+    width: 100%;
+    margin-top: 40px;
+    mix-blend-mode: overlay;
+    
+}
+
+.middle .right .imageContainer {
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    background: #250341;
+    mix-blend-mode: normal;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    margin-left: 80px;
+    bottom: 0;
+}
+
+.bottom {
+    width: 100%;
+}
+
+.bottom .socialmedias {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    float: right;
+    width: 160px;
+}
+
+.bottom .socialmedias img {
+    width: 35px;
+}
+
+.aboutme {
+    height: 100%;
+    width: 100%;
+}
+
+.picContainer {
+    height: 330px;
+    width: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.picContainer .circle {
+    height: 330px;
+    width: 330px;
+    background-color: transparent;
+    border: solid #EF0056 0.5px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.c1 {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.c3 {
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.c4 {
+    margin-right: 25px;
+    margin-top: 25px;
+}
+
+.picContainer img {
+    height: 310px;
+    width: 310px;
+    position: absolute;
+    border-radius: 100%;
+}
+
+.info {
+    width: 80%;
+}
+
+.info h1 {
+    color: white;
+    font-size: 65px;
+    font-weight: 400;
+}
+
+.info p {
+    color: rgb(202, 202, 202);
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 25px;
+}
+
+.aboutmeRight {
+    margin-left: 80px;
+}
+
+.info p br {
+    height: 30px;
+}
+
+.middleProjects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects {
+    width: 80%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.p2 {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.projects-item {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.i1, .i3 {
+    height: 150px;
+}
+
+.i2, .i4 {
+    margin-top: 150px;
+}
+
+.p-i2, .p-i4 {
+    margin-top: -25px;
+}
+
+
+.item .imgButton img {
+    width: 150px;
+    border-radius: 6px;
+    border: solid #EF0056 2px;
+    -webkit-box-shadow: 10px 25px 67px 15px rgba(0,0,0,0.51);
+    -moz-box-shadow: 10px 49px 67px 22px rgba(0,0,0,0.51);
+    box-shadow: 0 15px 67px 10px rgba(0, 0, 0, 0.473);
+    transition: filter 0.5s;
+    filter: brightness(60%);
+}
+
+.item:hover img {
+    filter: brightness(90%);
+}
+
+.item .imgButton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .imgButton a {
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Inria Sans', sans-serif;
+    color: #ffffff;
+    background:#ef00587a;
+    border: 2px solid #EF0056;
+    border-radius: 10px;
+    padding: 5px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    display: none;
+    z-index: 99;
+}
+
+.item:hover .imgButton a {
+    display: block;
+}
+
+.item .border {
+    border: solid #EF0056 1px;
+    background: none;
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.i4 .border {
+    cursor:default;
+}
+
+.item p {
+    position: absolute;
+    margin-top: 260px;
+    color: white;
+}
+
+.bottom .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.line {
+    width: 2px;
+    height: 80px;
+    background-color: white;
+}
+
+.socialmediasProjects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmediasProjects a img {
+    width: 32px;
+    margin-bottom: 10px;
+}
+
+.seeMoreButton button {
+    font-size: 20px;
+    font-family: 'Inria Sans', sans-serif;
+    color: white;
+    background: transparent;
+    border: 2px solid #EF0056;
+    border-radius: 10px;
+    padding: 10px 35px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.seeMoreButton button:hover {
+    background:#ef005856;
+}
+
+.seeMoreButton {
+    margin-bottom: 10px;
+}
+
+.p-container .seeMoreButton {
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* ------------------------------ MEDIA QUERY ------------------------------ */
+
+@media (max-width: 2560px) {
+
+    .index {
+        font-size: 50px;
+        padding: 45px 60px;
+    }
+
+    .middle .left h1 {
+        font-size: 260px;
+        font-weight: 400;
+        line-height: 300px;
+    }
+    
+    .middle .left p {
+        font-size: 70px;
+        width: 900px;
+        margin-top: 50px;
+    }
+    
+    .middle .left button {
+        font-size: 55px;
+        border: 5px solid #EF0056;
+        border-radius: 20px;
+        padding: 15px 45px;
+    }
+    
+    .middle .right .imageContainer img {
+        width: 1100px;
+        margin-top: 0px;
+    }
+    
+    .middle .right .imageContainer {
+        height: 1100px;
+        width: 1100px;
+        margin-left: 80px;
+    }
+    
+    .bottom .socialmedias {
+        width: 390px;
+    }
+    
+    .bottom .socialmedias img {
+        width: 90px;
+    }
+    
+    .picContainer {
+        height: 630px;
+        width: 630px;
+    }
+    
+    .picContainer .circle {
+        height: 630px;
+        width: 630px;
+        border: solid #EF0056 2px;
+    }
+    
+    .c1 {
+        margin-left: 25px;
+        margin-bottom: 25px;
+    }
+    
+    .c3 {
+        margin-right: 25px;
+        margin-top: 25px;
+    }
+    
+    .c4 {
+        margin-right: 35px;
+        margin-top: 35px;
+    }
+    
+    .picContainer img {
+        height: 610px;
+        width: 610px;
+    }
+    
+    .info h1 {
+        font-size: 150px;
+    }
+    
+    .info p {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+    
+    .aboutmeRight {
+        margin-left: 130px;
+    }
+    
+    .projects {
+        width: 90%;
+        height: 60%;
+    }
+    
+    .p2 {
+        width: 90%;
+    }
+    
+    .projects-item {
+        margin-top: 200px;
+        margin-bottom: 50px;
+    }
+    
+    .item {
+        margin-bottom: 50px;
+    }
+    
+    .i1, .i3 {
+        height: 450px;
+    }
+    
+    .i2, .i4 {
+        margin-top: 150px;
+    }
+    
+    .p-i2, .p-i4 {
+        margin-top: -25px;
+    }
+    
+    .item .imgButton img {
+        width: 350px;
+        border-radius: 10px;
+        border: solid #EF0056 4px;
+    }
+    
+    .item .imgButton a {
+        font-size: 50px;
+        border-radius: 20px;
+        padding: 10px 30px;
+    }
+    
+    .item .border {
+        border: solid #EF0056 3px;
+        width: 350px;
+        height: 460px;
+        margin-bottom: 45px;
+        margin-left: 45px;
+        border-radius: 10px;
+    }
+    
+    .item p {
+        margin-top: 640px;
+    }
+    
+    .line {
+        width: 4px;
+        height: 180px;
+    }
+    
+    .socialmediasProjects a img {
+        width: 75px;
+        margin-bottom: 30px;
+    }
+    
+    .seeMoreButton button {
+        font-size: 60px;
+        border: 3px solid #EF0056;
+        border-radius: 25px;
+        padding: 20px 55px;
+    }
+    
+    .p-container .seeMoreButton {
+        margin-top: 120px;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 1440px) {
+
+    .index {
+        width: 100%;
+        height: 100%;
+        font-family: 'Inria Sans', sans-serif;
+        font-size: 20px;
+        padding: 25px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .top {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgb(255, 255, 255);
+    }
+    
+    .middle {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .middle .left {
+        margin-top: 50px;
+    }
+    
+    .middle .left h1 {
+        font-size: 100px;
+        font-family: 'Inria Sans', sans-serif;
+        color: white;
+        font-weight: 400;
+        line-height: 100px;
+    }
+    
+    .middle .left .h1bottom {
+        margin-left: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .middle .left p {
+        font-size: 28px;
+        font-family: 'Inria Sans', sans-serif;
+        color: white;
+        width: 350px;
+        font-weight: 300;
+        margin-bottom: 50px;
+    }
+    
+    .middle .left button {
+        font-size: 20px;
+        font-family: 'Inria Sans', sans-serif;
+        color: white;
+        background: transparent;
+        border: 2px solid #EF0056;
+        border-radius: 10px;
+        padding: 10px 35px;
+        cursor: pointer;
+    }
+    
+    .middle .right .imageContainer img {
+        /* height: 540px; */
+        position: absolute;
+        width: 100%;
+        margin-top: 40px;
+        mix-blend-mode: overlay;
+        
+    }
+    
+    .middle .right .imageContainer {
+        position: absolute;
+        height: 500px;
+        width: 500px;
+        background: #250341;
+        mix-blend-mode: normal;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+        margin-left: 80px;
+        bottom: 0;
+    }
+    
+    .bottom {
+        width: 100%;
+    }
+    
+    .bottom .socialmedias {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        float: right;
+        width: 160px;
+    }
+    
+    .bottom .socialmedias img {
+        width: 35px;
+    }
+    
+    .aboutme {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .picContainer {
+        height: 330px;
+        width: 330px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 80px;
+    }
+    
+    .picContainer .circle {
+        height: 330px;
+        width: 330px;
+        background-color: transparent;
+        border: solid #EF0056 0.5px;
+        position: absolute;
+        border-radius: 100%;
+    }
+    
+    .c1 {
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .c3 {
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+    
+    .c4 {
+        margin-right: 25px;
+        margin-top: 25px;
+    }
+    
+    .picContainer img {
+        height: 310px;
+        width: 310px;
+        position: absolute;
+        border-radius: 100%;
+    }
+    
+    .info {
+        width: 80%;
+    }
+    
+    .info h1 {
+        color: white;
+        font-size: 65px;
+        font-weight: 400;
+    }
+    
+    .info p {
+        color: rgb(202, 202, 202);
+        font-size: 25px;
+        font-weight: 100;
+        margin-top: 25px;
+    }
+    
+    .aboutmeRight {
+        margin-left: 80px;
+    }
+    
+    .info p br {
+        height: 30px;
+    }
+    
+    .middleProjects {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .projects {
+        width: 80%;
+        height: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .p2 {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .projects-item {
+        margin-top: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 0px;
+    }
+    
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+    
+    .i1, .i3 {
+        height: 150px;
+    }
+    
+    .i2, .i4 {
+        margin-top: 150px;
+    }
+    
+    .p-i2, .p-i4 {
+        margin-top: -25px;
+    }
+    
+    .item .imgButton img {
+        width: 150px;
+        border-radius: 6px;
+        border: solid #EF0056 2px;
+        -webkit-box-shadow: 10px 25px 67px 15px rgba(0,0,0,0.51);
+        -moz-box-shadow: 10px 49px 67px 22px rgba(0,0,0,0.51);
+        box-shadow: 0 15px 67px 10px rgba(0, 0, 0, 0.473);
+        transition: filter 0.5s;
+        filter: brightness(60%);
+    }
+    
+    .item:hover img {
+        filter: brightness(90%);
+    }
+    
+    .item .imgButton {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .item .imgButton a {
+        position: absolute;
+        font-size: 18px;
+        font-family: 'Inria Sans', sans-serif;
+        color: #ffffff;
+        background:#ef00587a;
+        border: 2px solid #EF0056;
+        border-radius: 10px;
+        padding: 5px 20px;
+        text-decoration: none;
+        cursor: pointer;
+        display: none;
+        z-index: 99;
+    }
+    
+    .item:hover .imgButton a {
+        display: block;
+    }
+    
+    .item .border {
+        border: solid #EF0056 1px;
+        background: none;
+        width: 150px;
+        height: 200px;
+        position: absolute;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+    
+    .i4 .border {
+        cursor:default;
+    }
+    
+    .item p {
+        position: absolute;
+        margin-top: 260px;
+        color: white;
+    }
+    
+    .bottom .container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .p-container {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .line {
+        width: 2px;
+        height: 80px;
+        background-color: white;
+    }
+    
+    .socialmediasProjects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .socialmediasProjects a img {
+        width: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .seeMoreButton button {
+        font-size: 20px;
+        font-family: 'Inria Sans', sans-serif;
+        color: white;
+        background: transparent;
+        border: 2px solid #EF0056;
+        border-radius: 10px;
+        padding: 10px 35px;
+        cursor: pointer;
+        transition: all 0.5s;
+    }
+    
+    .seeMoreButton button:hover {
+        background:#ef005856;
+    }
+    
+    .seeMoreButton {
+        margin-bottom: 10px;
+    }
+    
+    .p-container .seeMoreButton {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 1350px) {
+
+    .index {
+        font-size: 20px;
+        padding: 18px 25px;
+    }
+
+    .middle .left h1 {
+        font-size: 100px;
+        line-height: 50px;
+        margin-top: 40px;
+    }
+
+    .middle .left .h1bottom {
+        margin-left: 30px;
+    }
+    
+    .middle .left p {
+        font-size: 30px;
+        width: 400px;
+        margin-top: 50px;
+    }
+    
+    .middle .left button {
+        font-size: 22px;
+        border: 2px solid #EF0056;
+        border-radius: 10px;
+        padding: 8px 20px;
+        margin-top: -25px;
+    }
+    
+    .middle .right .imageContainer img {
+        width: 450px;
+        margin-top: 40px;
+    }
+    
+    .middle .right .imageContainer {
+        height: 450px;
+        width: 450px;
+        margin-left: -10px;
+    }
+    
+    .bottom .socialmedias {
+        width: 170px;
+    }
+    
+    .bottom .socialmedias img {
+        width: 40px;
+    }
+    
+    .picContainer {
+        height: 290px;
+        width: 290px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    
+    .picContainer .circle {
+        height: 290px;
+        width: 290px;
+        border: solid #EF0056 1px;
+    }
+    
+    .c1 {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .c3 {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    
+    .c4 {
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    
+    .picContainer img {
+        height: 280px;
+        width: 280px;
+    }
+
+    .info {
+        width: 95%;
+        margin-left: -50px;
+        margin-top: 60px;
+    }
+    
+    .info h1 {
+        font-size: 55px;
+    }
+    
+    .info p {
+        font-size: 20px;
+        margin-bottom: -5px;
+    }
+    
+    .projects {
+        width: 90%;
+        height: 60%;
+        margin-top: -500px;
+    }
+    
+    .p2 {
+        width: 90%;
+    }
+    
+    .projects-item {
+        margin-top: -60px;
+        margin-bottom: -130px;
+    }
+    
+    .item {
+        margin-bottom: 50px;
+    }
+    
+    .i1, .i3 {
+        height: 450px;
+    }
+    
+    .i2, .i4 {
+        margin-top: 300px;
+    }
+    
+    .p-i2, .p-i4 {
+        margin-top: 0px;
+    }
+    
+    .item .imgButton img {
+        width: 140px;
+        border-radius: 10px;
+        border: solid #EF0056 3px;
+    }
+    
+    .item .imgButton a {
+        font-size: 20px;
+        border-radius: 12px;
+        padding: 5px 15px;
+        border-radius: 12px;
+    }
+    
+    .item .border {
+        border: solid #EF0056 2px;
+        width: 140px;
+        height: 185px;
+        margin-bottom: 20px;
+        margin-left: 20px;
+        border-radius: 10px;
+    }
+    
+    .item p {
+        margin-top: 250px;
+        font-size: 20px;
+    }
+    
+    .line {
+        width: 2px;
+        height: 70px;
+    }
+    
+    .socialmediasProjects a img {
+        width: 32px;
+        margin-bottom: 10px;
+    }
+
+    .seeMoreButton {
+        margin-top: 60px;
+    }
+    
+    .seeMoreButton button {
+        font-size: 22px;
+        border: 2px solid #EF0056;
+        border-radius: 15px;
+        padding: 10px 25px;
+    }
+    
+    .p-container .seeMoreButton {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .index {
+        font-size: 20px;
+        padding: 18px 25px;
+        height: -50%;
+    }
+
+    .index {
+        font-size: 20px;
+        padding: 18px 25px;
+        height: 80%;
+    }
+
+    .middle .left h1 {
+        font-size: 80px;
+        line-height: 40px;
+        margin-top: 40px;
+    }
+
+    .middle .left .h1bottom {
+        margin-left: 30px;
+    }
+    
+    .middle .left p {
+        font-size: 23px;
+        width: 300px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    
+    .middle .left button {
+        font-size: 18px;
+        border: 2px solid #EF0056;
+        border-radius: 10px;
+        padding: 8px 20px;
+    }
+    
+    .imageContainer {
+        top: 125px;
+    }
+
+    .middle .right .imageContainer img {
+        width: 320px;
+        margin-top: 40px;
+    }
+    
+    .middle .right .imageContainer {
+        height: 320px;
+        width: 320px;
+        margin-left: 10px;
+    }
+    
+    .bottom .socialmedias {
+        width: 110px;
+    }
+    
+    .bottom .socialmedias img {
+        width: 25px;
+    }
+    
+    .picContainer {
+        height: 190px;
+        width: 190px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    
+    .picContainer .circle {
+        height: 190px;
+        width: 190px;
+        border: solid #EF0056 1px;
+    }
+    
+    .c1 {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .c3 {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    
+    .c4 {
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    
+    .picContainer img {
+        height: 180px;
+        width: 180px;
+    }
+
+    .info {
+        width: 350px;
+        margin-left: -10px;
+        margin-top: 70px;
+    }
+    
+    .info h1 {
+        font-size: 25px;
+    }
+    
+    .info p {
+        font-size: 12px;
+        margin-bottom: -15px;
+    }
+    
+    .projects {
+        width: 85%;
+        height: 100%;
+        margin-top: -500px;
+    }
+    
+    .p2 {
+        width: 90%;
+    }
+    
+    .projects-item {
+        margin-top: -120px;
+        margin-bottom: -160px;
+    }
+    
+    .item {
+        margin-bottom: 50px;
+    }
+    
+    .i1, .i3 {
+        height: 450px;
+    }
+    
+    .i2, .i4 {
+        margin-top: 270px;
+    }
+    
+    .p-i2, .p-i4 {
+        margin-top: 0px;
+    }
+    
+    .item .imgButton img {
+        width: 100px;
+        border-radius: 8px;
+        border: solid #EF0056 2px;
+    }
+    
+    .item .imgButton a {
+        font-size: 15px;
+        border-radius: 12px;
+        padding: 3px 10px;
+        border-radius: 8px;
+    }
+    
+    .item .border {
+        border: solid #EF0056 1px;
+        width: 100px;
+        height: 130px;
+        margin-bottom: 15px;
+        margin-left: 15px;
+        border-radius: 8px;
+    }
+    
+    .item p {
+        margin-top: 185px;
+        font-size: 15px;
+    }
+    
+    .line {
+        width: 1px;
+        height: 60px;
+    }
+    
+    .socialmediasProjects a img {
+        width: 28px;
+        margin-bottom: 5px;
+    }
+
+    .seeMoreButton {
+        margin-top: 20px;
+    }
+    
+    .seeMoreButton button {
+        font-size: 18px;
+        border: 2px solid #EF0056;
+        border-radius: 10px;
+        padding: 8px 20px;
+    }
+    
+    .p-container .seeMoreButton {
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    .index {
+        font-size: 10px;
+        padding: 10px 15px;
+        height: 50%;
+    }
+
+    .middle {
+        height: 100%;
+    }
+
+    .middle .left {
+        margin-top: 20px;
+    }
+
+    .middle .left h1 {
+        font-size: 38px;
+        line-height: 0px;
+        margin-top: 40px;
+    }
+
+    .middle .left .h1bottom {
+        margin-left: 30px;
+    }
+    
+    .middle .left p {
+        font-size: 12px;
+        width: 150px;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    
+    .middle .left button {
+        font-size: 10px;
+        border: 1px solid #EF0056;
+        border-radius: 8px;
+        padding: 6px 15px;
+        margin-bottom: 0;
+    }
+
+    .middle .right .imageContainer img {
+        width: 180px;
+        margin-top: 10px;
+    }
+    
+    .middle .right .imageContainer {
+        height: 180px;
+        width: 180px;
+        margin-left: 10px;
+        margin-top: -55px;
+    }
+    
+    .bottom .socialmedias {
+        width: 65px;
+    }
+    
+    .bottom .socialmedias img {
+        width: 15px;
+    }
+    
+    .picContainer {
+        height: 120px;
+        width: 120px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    
+    .picContainer .circle {
+        height: 120px;
+        width: 120px;
+        border: solid #EF0056 0.5px;
+    }
+    
+    .c1 {
+        margin-left: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .c3 {
+        margin-right: 5px;
+        margin-top: 5px;
+    }
+    
+    .c4 {
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    
+    .picContainer img {
+        height: 110px;
+        width: 110px;
+    }
+
+    .info {
+        width: 200px;
+        margin-left: -50px;
+        margin-top: 50px;
+    }
+    
+    .info h1 {
+        font-size: 16px;
+        margin-bottom: -15px;
+    }
+    
+    .info p {
+        font-size: 10px;
+        margin-bottom: -20px;
+    }
+    
+    .projects {
+        width: 95%;
+        height: 100%;
+        margin-top: -300px;
+    }
+    
+    .p2 {
+        width: 90%;
+    }
+    
+    .projects-item {
+        margin-top: -285px;
+        margin-bottom: -350px;
+    }
+    
+    .item {
+        margin-bottom: 50px;
+    }
+    
+    .i1, .i3 {
+        height: 450px;
+    }
+    
+    .i2, .i4 {
+        margin-top: 270px;
+    }
+    
+    .p-i2, .p-i4 {
+        margin-top: 0px;
+    }
+    
+    .item .imgButton img {
+        width: 60px;
+        border-radius: 5px;
+        border: solid #EF0056 1px;
+    }
+    
+    .item .imgButton a {
+        font-size: 8px;
+        padding: 1px 5px;
+        border-radius: 4px;
+        border: solid #EF0056 0.5px;
+    }
+    
+    .item .border {
+        border: solid #EF0056 0.5px;
+        width: 60px;
+        height: 80px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    
+    .item p {
+        margin-top: 115px;
+        font-size: 10px;
+    }
+    
+    .line {
+        width: 1px;
+        height: 60px;
+    }
+    
+    .seeMoreButton button {
+        font-size: 12px;
+        border: 0.5px solid #EF0056;
+        border-radius: 5px;
+        padding: 3px 10px;
+    }
+    
+    .p-container .seeMoreButton {
+        margin-top: 0px;
+        margin-bottom: -100px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .index {
+        font-size: 10px;
+        padding: 12px 15px;
+        height: 40%;
+    }
+
+    .middle {
+        height: 100%;
+    }
+
+    .middle .left {
+        margin-top: 20px;
+    }
+
+    .middle .left h1 {
+        font-size: 35px;
+        line-height: 0px;
+        margin-top: 35px;
+    }
+
+    .middle .left .h1bottom {
+        margin-left: 20px;
+    }
+    
+    .middle .left p {
+        font-size: 10px;
+        width: 150px;
+        margin-top: -20px;
+        margin-bottom: 10px;
+    }
+    
+    .middle .left button {
+        font-size: 6px;
+        border: 0.5px solid #EF0056;
+        border-radius: 5px;
+        padding: 3px 8px;
+        margin-bottom: 0;
+    }
+
+    .middle .right .imageContainer img {
+        width: 150px;
+        margin-top: 10px;
+    }
+    
+    .middle .right .imageContainer {
+        height: 150px;
+        width: 150px;
+        margin-left: -5px;
+        margin-top: -65px;
+    }
+    
+    .bottom .socialmedias {
+        width: 50px;
+    }
+    
+    .bottom .socialmedias img {
+        width: 12px;
+    }
+    
+    .picContainer {
+        height: 80px;
+        width: 80px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    
+    .picContainer .circle {
+        height: 80px;
+        width: 80px;
+        border: solid #EF0056 0.5px;
+    }
+    
+    .c1 {
+        margin-left: 3px;
+        margin-bottom: 3px;
+    }
+    
+    .c3 {
+        margin-right: 3px;
+        margin-top: 3px;
+    }
+    
+    .c4 {
+        margin-right: 7px;
+        margin-top: 7px;
+    }
+    
+    .picContainer img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .info {
+        width: 200px;
+        margin-left: -50px;
+        margin-top: 30px;
+    }
+    
+    .info h1 {
+        font-size: 14px;
+        margin-bottom: -15px;
+    }
+    
+    .info p {
+        font-size: 8px;
+        margin-bottom: -20px;
+    }
+    
+    .projects {
+        width: 95%;
+        height: 100%;
+        margin-top: -300px;
+    }
+    
+    .p2 {
+        width: 90%;
+    }
+    
+    .projects-item {
+        margin-top: -240px;
+        margin-bottom: -380px;
+    }
+    
+    .item {
+        margin-bottom: 50px;
+    }
+    
+    .i1, .i3 {
+        height: 450px;
+    }
+    
+    .i2, .i4 {
+        margin-top: 270px;
+    }
+    
+    .p-i2, .p-i4 {
+        margin-top: 0px;
+    }
+    
+    .item .imgButton img {
+        width: 50px;
+        border-radius: 5px;
+        border: solid #EF0056 1px;
+    }
+    
+    .item .imgButton a {
+        font-size: 6px;
+        padding: 1px 5px;
+        border-radius: 4px;
+        border: solid #EF0056 0.5px;
+    }
+    
+    .item .border {
+        border: solid #EF0056 0.5px;
+        width: 50px;
+        height: 65px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+    
+    .item p {
+        margin-top: 95px;
+        font-size: 8px;
+    }
+    
+    .line {
+        width: 0.5px;
+        height: 35px;
+    }
+    
+    .socialmediasProjects a img {
+        width: 15px;
+        margin-bottom: 5px;
+    }
+
+    .seeMoreButton {
+        margin-top: 20px;
+    }
+    
+    .seeMoreButton button {
+        font-size: 12px;
+        border: 0.5px solid #EF0056;
+        border-radius: 5px;
+        padding: 3px 10px;
+    }
+    
+    .p-container .seeMoreButton {
+        margin-top: 0px;
+        margin-bottom: -200px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .index {
+        font-size: 8px;
+        padding: 8px 10px;
+        height: 34%;
+    }
+
+    .middle {
+        height: 100%;
+    }
+
+    .middle .left {
+        margin-top: 20px;
+    }
+
+    .middle .left h1 {
+        font-size: 30px;
+        line-height: 0px;
+        margin-top: 30px;
+    }
+
+    .middle .left .h1bottom {
+        margin-left: 20px;
+    }
+    
+    .middle .left p {
+        font-size: 10px;
+        width: 150px;
+        margin-top: -25px;
+        margin-bottom: 15px;
+    }
+    
+    .middle .left button {
+        font-size: 6px;
+        border: 0.5px solid #EF0056;
+        border-radius: 5px;
+        padding: 3px 8px;
+        margin-bottom: 0;
+    }
+
+    .middle .right .imageContainer img {
+        width: 130px;
+        margin-top: 10px;
+    }
+    
+    .middle .right .imageContainer {
+        height: 130px;
+        width: 130px;
+        margin-left: -20px;
+        margin-top: -60px;
+    }
+    
+    .bottom .socialmedias {
+        width: 50px;
+        margin-top: -10px;
+    }
+    
+    .bottom .socialmedias img {
+        width: 12px;
+    }
+    
+    .picContainer {
+        height: 80px;
+        width: 80px;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    
+    .picContainer .circle {
+        height: 80px;
+        width: 80px;
+        border: solid #EF0056 0.5px;
+    }
+    
+    .c1 {
+        margin-left: 3px;
+        margin-bottom: 3px;
+    }
+    
+    .c3 {
+        margin-right: 3px;
+        margin-top: 3px;
+    }
+    
+    .c4 {
+        margin-right: 7px;
+        margin-top: 7px;
+    }
+    
+    .picContainer img {
+        height: 75px;
+        width: 75px;
+    }
+
+    .info {
+        width: 180px;
+        margin-left: -60px;
+        margin-top: 30px;
+    }
+    
+    .info h1 {
+        font-size: 14px;
+        margin-bottom: -15px;
+    }
+    
+    .info p {
+        font-size: 8px;
+        margin-bottom: -20px;
+    }
+    
+    .projects {
+        width: 90%;
+        height: 100%;
+        margin-top: -300px;
+    }
+    
+    .p2 {
+        width: 90%;
+    }
+    
+    .projects-item {
+        margin-top: -240px;
+        margin-bottom: -350px;
+    }
+    
+    .item {
+        margin-bottom: 50px;
+    }
+    
+    .i1, .i3 {
+        height: 450px;
+    }
+    
+    .i2, .i4 {
+        margin-top: 270px;
+    }
+    
+    .p-i2, .p-i4 {
+        margin-top: 0px;
+    }
+    
+    .item .imgButton img {
+        width: 40px;
+        border-radius: 3.5px;
+        border: solid #EF0056 1px;
+    }
+    
+    .item .imgButton a {
+        font-size: 6px;
+        padding: 1px 5px;
+        border-radius: 4px;
+        border: solid #EF0056 0.5px;
+    }
+    
+    .item .border {
+        border: solid #EF0056 0.5px;
+        width: 40px;
+        height: 54px;
+        margin-bottom: 6px;
+        margin-left: 6px;
+        border-radius: 3.5px;
+    }
+    
+    .item p {
+        margin-top: 72px;
+        font-size: 6px;
+    }
+    
+    .line {
+        width: 0.5px;
+        height: 30px;
+    }
+    
+    .socialmediasProjects a img {
+        width: 15px;
+        margin-bottom: 5px;
+    }
+
+    .seeMoreButton {
+        margin-top: 20px;
+    }
+    
+    .seeMoreButton button {
+        font-size: 8px;
+        border: 0.5px solid #EF0056;
+        border-radius: 5px;
+        padding: 3px 10px;
+    }
+    
+    .p-container .seeMoreButton {
+        margin-top: 0px;
+        margin-bottom: -120px;
+    }
+}
