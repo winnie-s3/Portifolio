@@ -14,8 +14,8 @@
   <img src="https://user-images.githubusercontent.com/74850021/211551635-2f2a2296-2b7c-4696-b7a7-202a0cd0e90e.png" width="45%">
   
   <h3>Mobile</h3>
-  <img src="https://user-images.githubusercontent.com/74850021/194457150-a1d51ec8-88d1-46be-8068-1073927c404f.png" width="20%">
-  <img src="https://user-images.githubusercontent.com/74850021/194457448-0653b51d-9a0a-4adc-b767-25440f738644.png" width="20%">
+  <img src="https://user-images.githubusercontent.com/74850021/211554999-df82f050-4bd9-4155-a23c-7afed5e96906.png" width="20%">
+  <img src="https://user-images.githubusercontent.com/74850021/211555039-8d4e238c-5292-4f8c-8c54-cd4c5e8c8c0b.png" width="20%">
   
   
   <h2 align="left">Recursos</h2>
@@ -25,7 +25,7 @@
   
   <h2 align="left">Referências</h2>
   <ul align="left">
-    <li>Fontes: <a href="https://fonts.google.com/specimen/Inria+Sans?query=inr">Arapey</a>HK Grotesk</a></li>
+    <li>Fontes: <a href="https://fonts.google.com/specimen/Inria+Sans?query=inr">Inria Sans</a></li>
     <li>Ícones: <a href="https://icons8.com.br">Icons8</a></li>
   </ul>
   
